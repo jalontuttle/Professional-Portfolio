@@ -2,6 +2,10 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+:root {
+  --primary: rgb(222, 231, 205);
+  --secondary: #e6fa74;
+}
 img {
   display: block;
   margin-left: auto;
@@ -32,28 +36,6 @@ img {
   background: #e6fa74;
 }
 
-@media all and (max-width: 800px) {
-  .navigation {
-    justify-content: space-around;
-  }
-}
-
-@media all and (max-width: 600px) {
-  .navigation {
-    flex-flow: column wrap;
-    padding: 0;
-  }
-  .navigation a { 
-    text-align: center; 
-    padding: 10px;
-    border-top: 1px solid rgba(255, 255, 255,0.3); 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
-  }
-  .navigation li:last-of-type a {
-    border-bottom: none;
-  }
-}
-
 .page-wrapper {
   max-width: 88%;
   margin-left: auto;
@@ -81,3 +63,87 @@ img {
 }
 .page-section p {
   margin-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flex-item {
+  border: 5px solid var(--secondary);
+  background-color: var(--primary);
+  color: whitesmoke;
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 150%;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+}
+
+.flex-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+.flex-item:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.flex-item div {
+  background-color: var(--secondary);
+  padding: 8px 10px;
+}
+.flex-item h3 {
+  font-size: 1.6rem;
+}
+
+.horiseon-app {
+  background-image: url("../images/Horiseon-Screenshot.JPG");
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex-item,
+  .flex-item:first-child {
+    flex-basis: 100%;
+  }
+  .flex-item:first-child {
+    min-height: 150px;
+  }
+  .hero-banner {
+    justify-content: center;
+    text-align: center;
+  }
+  .contact address {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
