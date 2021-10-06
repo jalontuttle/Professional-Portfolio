@@ -6,6 +6,7 @@
   --primary: rgb(222, 231, 205);
   --secondary: #e6fa74;
 }
+
 img {
   display: block;
   margin-left: auto;
@@ -71,9 +72,9 @@ img {
   justify-content: center;
 }
 .flex-item {
-  border: 5px solid var(--secondary);
+  border: 5px solid var(--primary);
   background-color: var(--primary);
-  color: whitesmoke;
+  color: black;
   min-height: 150px;
   max-height: 150px;
   flex-basis: calc(50% - 1em);
@@ -93,10 +94,10 @@ img {
     flex-basis: 100%;
 }
 .flex-item:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--secondary);
 }
 .flex-item div {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   padding: 8px 10px;
 }
 .flex-item h3 {
@@ -107,11 +108,30 @@ img {
   background-image: url("../images/Horiseon-Screenshot.JPG");
 }
 
-@media all and (max-width: 800px) {
-  .navigation {
-    justify-content: space-around;
-  }
+.contact address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
 }
+.contact address a {
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-style: normal;
+  background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  margin: 0 0.2rem 0.1rem;
+  display: inline-block;
+}
+.contact address a:hover {
+  background-size: 100% 88%;
+  color: black;
 
 @media all and (max-width: 600px) {
   .navigation {
