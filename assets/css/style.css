@@ -63,11 +63,11 @@ img {
   flex: 0 0 77%;
 }
 .page-section p {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .flex-container {
-  display: flex;
+  display: inline-block;
   flex-wrap: wrap;
   justify-content: center;
 }
