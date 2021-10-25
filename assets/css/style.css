@@ -73,7 +73,7 @@ img {
 }
 .flex-item {
   border: 5px solid var(--primary);
-  background-color: var(--primary);
+  background-color: transparent;
   color: black;
   min-height: 150px;
   max-height: 150px;
@@ -92,7 +92,17 @@ img {
 .flex-item:first-child {
     min-height: 400px;
     flex-basis: 100%;
+    background-image: url(../images/AirBender\ screenshot.png);
 }
+
+.workday{
+  background-image: url(../images/Workday\ scheduler\ screenshot.png);
+}
+
+.password{
+  background-image: url(../images/password\ screenshot.png);
+}
+
 .flex-item:hover {
   background-color: var(--secondary);
 }
@@ -102,10 +112,6 @@ img {
 }
 .flex-item h3 {
   font-size: 1.6rem;
-}
-
-.horiseon-app {
-  background-image: url("../images/Horiseon-Screenshot.JPG");
 }
 
 .contact address {
