@@ -43,6 +43,7 @@ img {
   margin-right: auto;
 }
 .page-section {
+  font-size: 20px;
   margin: 25px 0;
   padding: 10px 0;
   display: flex;
