@@ -2,6 +2,10 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+body {
+  background-color: rgb(182, 182, 182);
+}
+
 :root {
   --primary: rgb(222, 231, 205);
   --secondary: #e6fa74;
