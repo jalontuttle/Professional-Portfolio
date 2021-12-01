@@ -39,6 +39,7 @@ img {
 
 .navigation a:hover {
   background: #e6fa74;
+
 }
 
 .page-wrapper {
@@ -113,6 +114,10 @@ img {
 
 .password{
   background-image: url(../images/password\ screenshot.png);
+}
+
+.notes {
+  background-image: url(../images/notes-screenshot.png);
 }
 
 .flex-item:hover {
